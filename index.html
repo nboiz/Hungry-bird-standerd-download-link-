@@ -1,54 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hungry Bird Standard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-color: #808080;
-            background-size: cover;
-            background-position: center;
-        }
+  <meta charset="UTF-8">
+  <title>Download Hungry Bird Standerd</title>
+  <script>
+    window.onload = function() {
+      // GitHub Releases APK link (replace username, repo, and version)
+      const apkUrl = "https://github.com/username/repo/releases/download/v1.0/Hungry%20Bird%20Standerd.apk";
 
-        h1 {
-            color: #333;
-            background-color: #add8e6;
-            display: inline-block;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #ffa500;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #d3d3d3;
-        }
-
-        p {
-            background-color:#ffd580;
-            display: inline-block;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
+      const a = document.createElement("a");
+      a.href = apkUrl;
+      a.download = "Hungry Bird Standerd.apk"; // Suggested file name
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
+  </script>
 </head>
 <body>
-    <h1>Hungry Bird Standard Version</h1>
-    <p>Download the standard version of Hungry Bird below:</p><br><br><br>
-    <a href="Hungry_Bird_Standerd.apk" download>
-        <button>Download Hungry Bird Standard APK</button>
-    </a>
+  <h2>Your download will start automatically...</h2>
 </body>
 </html>
